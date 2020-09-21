@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <title>My Web Site</title>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -26,7 +30,7 @@
 
         <div id="main">
 
-            <div class="content" id="Profile"　name="Profile">
+            <div class="content" id="Profile" 　name="Profile">
                 <h1 class="top-title">My profile</h1>
                 <img src="profile.JPG" alt="" width="300">
                 <div class="right-box">
@@ -57,15 +61,15 @@
                     </p>
                     <h2>Original Work</h2>
                     <p>Busy Fox</p>
-                    
+
                     <a href="https://unityroom.com/games/fox_run" class="fbbutton">Unity Room
                         <span class="edge edge1"></span>
                         <span class="edge edge2"></span>
                         <span class="edge edge3"></span>
                         <span class="edge edge4"></span>
                     </a>
-<!--                    <a href="https://unityroom.com/games/fox_run">Summer photo</a>-->
-                    
+                    <!--                    <a href="https://unityroom.com/games/fox_run">Summer photo</a>-->
+
 
                 </div>
                 <video controls="controls" width="300" alt="">
@@ -105,29 +109,45 @@
                         <li>
                             <h2>SHISHAMO</h2>
                         </li>
-                        
+
                     </ul>
                 </div>
             </div>
-            
+
             <div class="content" id="Summer">
                 <h1 class="top-title">Summer Photo</h1>
                 <h2>TDR</h2>
-                <div class="photo"><img src="TDL2.JPG" alt="" width="600" ></div>
-                <div class="photo"><img src="TDL3.JPG" alt="" width="600" ></div>
-                <div class="photo"><img src="TDS.jpeg" alt="" width="600" ></div>
+                <div class="TDR" id="photos">
+                    <a href="TDL2.JPG" data-lightbox="group" class="photo"><img src="TDL2.JPG" width="300"></a>
+                    <a href="TDL3.JPG" data-lightbox="group" class="photo"><img src="TDL3.JPG" width="300"></a>
+                    <a href="TDS.jpeg" data-lightbox="group" class="photo"><img src="TDS.jpeg" width="400"></a>
+                </div>
+
                 <h2>箱根元宮</h2><br>
-                <div class="photo"><img src="hakone.JPG" alt="" width="600" ></div>
-                <div class="photo"><img src="hakone2.JPG" alt="" width="600" ></div>
+                <div class="hakone" id="photos">
+                    <a href="hakone.JPG" data-lightbox="group" class="photo"><img src="hakone.JPG" width="300"></a>
+                    <a href="hkone2.JPG" data-lightbox="group" class="photo"><img src="hakone2.JPG" width="300"></a>
+                </div>
+
                 <h2>向日葵 in 国営ひたち海浜公園</h2><br>
-                <div class="photo"><img src="himawari.JPG" alt="" width="600"></div>
-                <div class="photo"><img src="hitati2.JPG" alt="" width="600" ></div>
+                <div class="hitati" id="photos">
+                    <a href="himawari.JPG" data-lightbox="group" class="photo"><img src="himawari.JPG" width="300"></a>
+                    <a href="hitati2.JPG" data-lightbox="group" class="photo"><img src="hitati2.JPG" width="300"></a>
+                </div>
+
                 <h2>天体観測 in 奥多摩</h2><br>
-                <div class="photo"><img src="star.JPG" alt="" width="600"></div>
+                <div class="okutama" id="photos">
+                    <a href="star.JPG" data-lightbox="group" class="photo"><img src="star.JPG" width="300"></a>
+                </div>
+
                 <h2>花火 in 二子玉川</h2><br>
-                <div class="photo"><img src="fireworks.JPG" alt="" width="600"></div>
-                <div class="photo"><img src="firework2.JPG" alt="" width="600" ></div>
-                
+                <div class="hanabi" id="photos">
+                    <a href="fireworks.JPG" data-lightbox="group" class="photo"><img src="fireworks.JPG" width="300"></a>
+                    <a href="firework2.JPG" data-lightbox="group" class="photo"><img src="firework2.JPG" width="300"></a>
+                </div>
+
+
+
             </div>
 
 
